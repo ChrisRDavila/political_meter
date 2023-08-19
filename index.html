@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>political meter</title>
+</head>
+<body>
+  <div>
+    <h1>Where do you fall on the political spectrum?</h1>
+
+    <p>Answer the following questions to see where you lie politically</p>
+    <p>Enter the number 0 for false, 1 for maybe and 2 for true</p>
+
+    <form id="userInfo">
+      <p id="error-message" class="hidden">Please enter a positive whole number between 0 and 2</p>
+      <p>0 = false</p><br>
+      <p>1 = maybe</p><br>
+      <p>2 = true</p><br>
+      <label for="questionOne">Should we increase minimum age?</label>
+      <input id="questionOne" type="number" min="0" max="2"><br>
+      <label for="questionTwo">Is climate change real?</label>
+      <input id="questionTwo" type="number" min="0" max="2"><br>
+      <label for="questionThree">Do you like Joe Biden?</label>
+      <input id="questionThree" type="number" min="0" max="2"><br>
+      <label for="questionFour">Should women retain the right to have abortions?</label>
+      <input id="questionFour" type="number" min="0" max="2"><br>
+      <label for="questionFive">Is there circumstances where immigration is acceptable ie refugees?</label>
+      <input id="questionFive" type="number"min="0" max="2"><br>
+      <button type="submit">Show me the results</button>
+    </form>
+
+    <div id="conservative" class="hidden">
+      <h1>You may be a conservative</h1>
+    </div>
+    <div id="moderate" class="hidden">
+      <h1>You may be a moderate</h1>
+    </div>
+    <div id="liberal" class="hidden">
+      <h1>You may be liberal</h1>
+    </div>
+    <div id="sorry" class="hidden">
+      <h1>The info you entered does not match and the criteria</h1>
+      <p>Try again with different input</p> 
+    </div>
+  </div>
+</body>
+</html>
